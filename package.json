@@ -1,0 +1,40 @@
+{
+  "name": "stimulus-turbolinks-mobx-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "compile": "webpack --config ./webpack.config",
+    "build": "webpack --config ./webpack.config && node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohonisaurabh/stimulus-turbolinks-mobx.git"
+  },
+  "keywords": [
+    "StimulusJS",
+    "Turbolinks",
+    "Mobx"
+  ],
+  "author": "Saurabh Sohoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohonisaurabh/stimulus-turbolinks-mobx/issues"
+  },
+  "homepage": "https://github.com/sohonisaurabh/stimulus-turbolinks-mobx#readme",
+  "dependencies": {
+    "stimulus": "^1.1.0",
+    "turbolinks": "^5.2.0",
+    "webpack": "^4.26.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
