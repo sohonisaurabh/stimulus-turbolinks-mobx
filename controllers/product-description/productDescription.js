@@ -2,10 +2,13 @@ import { Controller } from 'stimulus';
 
 class ProductDescription extends Controller {
     connect() {
-        console.log(`Connected!`);
+        console.log(`Product Description Controller Connected!`);
     }
     disconnect() {
-        console.log(`Disconnected!!`);
+        console.log(`Product Desctiption Controller Disconnected!!`);
+    }
+    addToCart() {
+        console.log(`Clicked on add to cart!`);
     }
 }
 
