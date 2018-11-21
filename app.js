@@ -5,4 +5,4 @@ Turbolinks.start()
 
 const application = Application.start();
 
-export default application;
+window.stimulusApp = application;

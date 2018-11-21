@@ -2,15 +2,71 @@
 <html>
     <head>
         <title>Product Listing - Stimulus-Turbolinks-Mobx app</title>
+        <style>
+            .plist-wrapper {
+                display: flex;
+                justify-content: space-around;
+            }
+            .header-bg {
+                background: #2874f0;
+                display: flex;
+                font-size: 1.5em;
+                justify-content: space-between;
+                padding: 0 2em;
+            }
+            .brand-name {
+                color: #fff;
+                text-decoration: none;
+            }
+            .cart a {
+                color: #fff;
+            }
+            .cart-items-count {
+                background: yellow;
+                border-radius: 20px;
+                color: #0076be;
+                font-size: 0.75em;
+                padding: 5px;
+                vertical-align: top;
+            }
+            footer {
+                background: purple;
+                color: #fff;
+                text-align: center;
+            }
+        </style>
         <script src="/dist/app.js"></script>
+        <script src="/dist/productListing.js"></script>
     </head>
     <body>
         {{> header}}
-        <main>
-            <p>Very long paragraph containing the keyword <strong>Product Listing Page</strong></p>
+        <main data-controller="productListing">
+            <h2>Product Listing Page</h2>
+            <div class="plist-wrapper">
+                <!-- Product 1 -->
+                <div class="p-wrapper">
+                    <div class="p-image">
+                        <img alt="Product 1 image"/>
+                    </div>
+                    <h3 class="p-summary">LG H454A 60cm (24 inch) HD Ready LED TV</h3>
+                </div>
+                <!-- Product 2 -->
+                <div class="p-wrapper">
+                    <div class="p-image">
+                        <img alt="Product 2 image"/>
+                    </div>
+                    <h3 class="p-summary">LG Smart 80cm (32 inch) HD Ready LED Smart TV</h3>
+                </div>
+                <!-- Product 3 -->
+                <div class="p-wrapper">
+                    <div class="p-image">
+                        <img alt="Product 3 image"/>
+                    </div>
+                    <h3 class="p-summary">LG Ultra HD 139cm (55 inch) Ultra HD (4K) LED Smart TV</h3>
+                </div>
+            </div>
             <a href="/productDescription">Click here to go to Product Description Page</a>
         </main>
         {{> footer}}
-        <script src="/dist/productListing.js"></script>
     </body>
 </html>

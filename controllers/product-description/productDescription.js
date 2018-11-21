@@ -1,6 +1,14 @@
-import App from "./../../app";
-import { definitionsFromContext } from "stimulus/webpack-helpers";
+import { Controller } from 'stimulus';
 
-const context = require.context("./", true, /\controller.js$/);
-App.load(definitionsFromContext(context));
-console.log("Code executed from Product Description Page!");
+class ProductDescription extends Controller {
+    connect() {
+        console.log(`Connected!`);
+    }
+    disconnect() {
+        console.log(`Disconnected!!`);
+    }
+}
+
+window.stimulusApp.register('productDescription', ProductDescription);
+
+export default ProductDescription;

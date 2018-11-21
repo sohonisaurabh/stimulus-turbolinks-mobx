@@ -2,14 +2,40 @@
 <html>
     <head>
         <title>Product Description - Stimulus-Turbolinks-Mobx app</title>
+        <style>
+            .pdes-wrapper {
+                text-align: center;
+            }
+            .add-to-cart {
+                background: #ff9f00;
+                border: none;
+                border-radius: 2px;
+                box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+                color: #fff;
+                cursor: pointer;
+                font-weight: bold;
+                padding: 18px 8px;
+            }
+        </style>
         <script src="/dist/app.js"></script>
+        <script src="/dist/productDescription.js"></script>
     </head>
     <body>
         {{> header}}
-        <main>
-            <p>Very long paragraph containing the keyword <strong>Product Description Page</strong></p>
+        <main data-controller="productDescription">
+            <h2>Product Description Page</h2>
+            <div class="pdes-wrapper">
+                <!-- Product details -->
+                <div class="p-wrapper">
+                    <div class="p-image">
+                        <img alt="Product image"/>
+                    </div>
+                    <h3 class="p-summary">LG H454A 60cm (24 inch) HD Ready LED TV</h3>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <a href="/">Click here to go to Product Listing Page</a>
         </main>
         {{> footer}}
-        <script src="/dist/productDescription.js"></script>
     </body>
 </html>
