@@ -90,7 +90,7 @@
 /*!****************!*\
   !*** ./app.js ***!
   \****************/
-/*! exports provided: default */
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -102,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 turbolinks__WEBPACK_IMPORTED_MODULE_1___default.a.start();
 var application = stimulus__WEBPACK_IMPORTED_MODULE_0__["Application"].start();
-/* harmony default export */ __webpack_exports__["default"] = (application);
+window.stimulusApp = application;
 
 /***/ }),
 

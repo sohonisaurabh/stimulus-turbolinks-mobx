@@ -3,6 +3,50 @@
     <head>
         <title>Product Description - Stimulus-Turbolinks-Mobx app</title>
         <style>
+            .plist-wrapper {
+                display: flex;
+                justify-content: space-around;
+            }
+            .header-bg {
+                background: #2874f0;
+                display: flex;
+                font-size: 1.5em;
+                justify-content: space-between;
+                padding: 0 2em;
+            }
+            .brand-name {
+                color: #fff;
+                text-decoration: none;
+            }
+            .cart a {
+                color: #fff;
+            }
+            .cart-items-count {
+                background: yellow;
+                border-radius: 20px;
+                color: #0076be;
+                font-size: 0.75em;
+                padding: 5px;
+                vertical-align: top;
+            }
+            footer {
+                background: purple;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                padding: 0 1em;
+                text-align: center;
+            }
+            p {
+                margin: 0;
+            }
+            .add-products-banner {
+                font-size: 12px;
+            }
+            .hidden {
+                display: none;
+            }
             .pdes-wrapper {
                 text-align: center;
             }
@@ -17,8 +61,10 @@
                 padding: 18px 8px;
             }
         </style>
+        <script src="/dist/cartStore.js"></script>
         <script src="/dist/app.js"></script>
-        <script src="/dist/header.js" async></script>
+        <script src="/dist/header.js"></script>
+        <script src="/dist/footer.js"></script>
         <script src="/dist/productDescription.js"></script>
     </head>
     <body>

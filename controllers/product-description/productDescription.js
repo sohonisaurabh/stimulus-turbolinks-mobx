@@ -1,14 +1,15 @@
 import { Controller } from 'stimulus';
+import inventory from "./../../data/inventory.js";
 
 class ProductDescription extends Controller {
     connect() {
-        console.log(`Product Description Controller Connected!`);
-    }
-    disconnect() {
-        console.log(`Product Desctiption Controller Disconnected!!`);
+        
     }
     addToCart() {
-        console.log(`Clicked on add to cart!`);
+        let productId = 1;
+        window.appCartStore.addToCart(inventory.products.filter((product) => {
+            return product.id === productId;
+        })[0]);
     }
 }
 
